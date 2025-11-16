@@ -39,11 +39,8 @@ spring.datasource.password={your password for Workbench}
 
 
 USE {your_db_name};
-
-# Student Management System - Frontend Setup & UI Features
-
-Pas rregullimeve në `application.properties` të backend-it, mund të kaloni tek një instancë e dytë e programit për të startuar frontend-in Angular.
 ```
+Pas rregullimeve në `application.properties` të backend-it, mund të kaloni tek një instancë e dytë e programit për të startuar frontend-in Angular.
 
 ## Setup i Frontend-it (Angular)
 
