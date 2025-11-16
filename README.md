@@ -1,43 +1,23 @@
-instruksione per hedhjen e ndryshimeve ne github nga terminali
-git pull (merr ndryshimet e fundit te bera ne main para se te hedhesh ndryshimet)
-git add . (shton ndryshimet dhe i ben gati per hedhje) 
-git commit example msg: (mezazhi informues per shtimin qe ke ber)
-git commit -m "
- feat: add book controller
- fix: correct borrow validation
- refactor: optimize repository logic	
- docs: update README with setup guide
-"
-git push (ben shtyrjen e ndryshimeve ne git hub 
+Student managment system eshte nje application ku perdoruesi mundet te shtoj studentet me parametrat emer email dhe note mesatare me ane te User Interface e cila eshte ndertuar me angular dhe gjenerimi i ID eshte automatike.
+Per te perdorur kete projekt do ju duhet java 23, angular 20.0.0, mysql workbench, intellj
+[shkruj si shkarkohen]
+Setup-i:
+Hapni intelj dhe shkoni tek 'get from version control' dhe aty mund te vendosni url (https://github.com/erginhysenaj/STUDENT-MANAGEMENT-SYSTEM.git) e kesaj repo-je per ta shkarkuar.
+ne branch main do ndodhet programi java (backend-i) ne te cilin duhet te shkoni tek src/main/resources/application.properties ku duhet te beni disa ndryshime ne varesi te krijimit ne mySQL workbench:
+spring.application.name={replace with you app name}
+spring.datasource.url=jdbc:mysql://localhost:3306/{replace with your db name} te krijuar ne workbench sql si dhe duhet te shtypni use per pjesen e perdorimit.
+spring.datasource.username={your username for workbench}
+spring.datasource.password={your password for workbench}
 
-krijon branchin e ri tek intellj new branch me emrin sipas 
-feature qe do shtosh (psh: entityStudent)
+pasi te keni ber rregullimet ne application.properties mund te kalojm tek nje instanc e dyt e programit qe ben run branch-in frontendAngular dhe te shtoni node package manager me ane te command line interface
+te intellj npm install pasi te behet instalimi mund ti japim run me komanden ng serve
 
-pastaj i ben checkout atij branchi qe ke krijuar qe te punosh aty
-cdo branch duhet te ket bazen e vet nga main.
-
-kur i ben git add * 
-git commit 
-git push 
-
-do tjapi nje gje te ngjashme si kjo:
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin EntityStudent
-
-To have this happen automatically for branches without a tracking
-
-merre git pushin e dhen e bej copy paste
-
-ktu ke maru pun me terminalin 
-
-shko ne github te repo jon student-management-system
-pull requests
-do tthot qe branchi i ri ka pasur ndryshime. 
-beji compare & pull request
-do shkruash titullin
-dhe pershkrimin duke thene se cfar ke ber ne kete commit me shum detaje
-ne fund shtyp create pull request
-
-co te review paketen pas ksaj.
-dhe nese ka maru e coj un te done
+pasi hapim localhost:4200 qe na tregon CLI e branchit frontendAngular
+do na shfaqet UI qe ka keto aftesi:
+1- +Add new student ku mund te shtojm nje student te ri me parametrat emer email dhe nota mesatare
+2-Edit qe ndodhet tek rreshti i studentit te krijuar dhe na mundeson editimin e tij qoft ne emer not apo email.
+3- delete ku mund ta fshijm si rekord ate student
+4- Search student ku mund te kerkojm me emer ose me not mesatare (e.g: 4 >= {studenti me ate not} <=8)
+5- clear qe fshin filtrat e shtuar 
+te gjitha ndryshimet ketu do te pasqyrohen the ne workbench pasi jan te lidhura kete mundemi ta shikojm duke shkuar ne workbench, db e krijuar,tables (students), ikona 3 ne ate rresht do ju tregoj studentet e shtuar.
+tek columns qe ndodhet posht tables mund te shikoni parametrat id (auto-genereted),emer,email,nota mesatare 
