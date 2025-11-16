@@ -37,7 +37,7 @@ USE {DB_name};
 ## Setup i Backend-it (Java)
 
 1. Shkoni tek **branch `main`** – aty ndodhet backend-i Java.  
-2. Hapni file-in:  
+2. Hapni file-in:  application.properties path i te cilit eshte src/main/resources/application.properties
 
 3. Bëni ndryshimet e nevojshme sipas konfigurimit tuaj në MySQL Workbench:
 
